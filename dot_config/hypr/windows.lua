@@ -2,6 +2,7 @@ hl.window_rule({
     name = "float-windows",
     match = { class = ".*" },
     float = true,
+    size = { 1600, 900 },
 })
 
 local suppressMaximizeRule = hl.window_rule({
