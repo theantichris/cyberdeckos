@@ -2,6 +2,8 @@ packages:
   pacman:
     - bluetui
     - brave-origin-bin
+    - cachyos-gaming-applications
+    - cachyos-gaming-meta
     - chatgpt-desktop-bin
     - entr
     - git-delta
