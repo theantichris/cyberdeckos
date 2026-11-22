@@ -1,6 +1,7 @@
 packages:
   pacman:
     - bitwarden
+    - bitwarden-cli
     - bluetui
     - brave-origin-bin
     - cachyos-gaming-applications
