@@ -17,4 +17,7 @@ packages:
     - wl-clipboard
     - xdg-desktop-portal-gtk
     - xdg-desktop-portal-hyprland
+  aur:
+    - mitos-editor-bin
+    - superseedr
 

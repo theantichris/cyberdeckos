@@ -2,3 +2,4 @@
 set -eu
 
 sudo pacman -S --needed -- {{ .packages.pacman | shellQuoteList | join " " }}
+shelly install aur --needed {{ .packages.aur | shellQuoteList | join " " }}
