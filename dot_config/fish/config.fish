@@ -6,6 +6,6 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 #    # smth smth
 #end
 
-set -gX EDITOR ms
-set -gX VISUAL ms
-set -gX BROWSER brave-origin
+set -gx EDITOR ms
+set -gx VISUAL ms
+set -gx BROWSER brave-origin
