@@ -16,6 +16,7 @@ packages:
     - kitty
     - ollama
     - ollama-cuda
+    - oo7
     - openai-codex
     - rofi
     - superfile
