@@ -1,9 +1,3 @@
-local mainMod     = "SUPER"
-local browser     = "brave-origin"
-local fileManager = "kitty --class superfile --title Superfile spf"
-local launcher    = "rofi -show drun"
-local terminal    = "kitty"
-
 hl.bind(mainMod .. " + SPACE",  hl.dsp.exec_cmd(launcher))
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + B",      hl.dsp.exec_cmd(browser))
@@ -56,8 +50,8 @@ for i = 1, 10 do
     hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 
-hl.bind(mainMod .. " + ALT + H", hl.dsp.workspace.move({ monitor = "desc:CORSAIR MEMORY Inc. 34WQHD240-C" }))
-hl.bind(mainMod .. " + ALT + L", hl.dsp.workspace.move({ monitor = "eDP-1" }))
+hl.bind(mainMod .. " + ALT + H", hl.dsp.workspace.move({ monitor = monitors.external }))
+hl.bind(mainMod .. " + ALT + L", hl.dsp.workspace.move({ monitor = monitors.laptop }))
 
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })

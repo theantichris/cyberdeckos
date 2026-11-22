@@ -1,3 +1,4 @@
+require("variables")
 require("appearance")
 require("config")
 require("environment")
