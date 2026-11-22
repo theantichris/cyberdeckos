@@ -2,13 +2,19 @@
 set -eu
 
 {{ range .packages.pacman }}
-if ! pacman -Qq {{ . | quote }} >/dev/null 2>&1; then
-    sudo pacman -S --needed {{ . | quote }}
+if ! pacman -Qq {{ . | shellQuote }} >/dev/null 2>&1; then
+    sudo pacman -S --needed {{ . | shellQuote }}
 fi
 {{ end }}
 
 {{ range .packages.aur }}
-if ! pacman -Qq {{ . | quote }} >/dev/null 2>&1; then
-    shelly install aur {{ . | quote }}
+if ! pacman -Qq {{ . | shellQuote }} >/dev/null 2>&1; then
+    shelly install aur {{ . | shellQuote }}
+fi
+{{ end }}
+
+{{ range .packages.remove }}
+if pacman -Qq -- {{ . | shellQuote }} >/dev/null 2>&1; then
+    sudo pacman -Rns -- {{ . | shellQuote  }}
 fi
 {{ end }}

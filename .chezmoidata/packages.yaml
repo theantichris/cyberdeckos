@@ -30,4 +30,16 @@ packages:
     - slack-desktop
     - superseedr
     - uhk-agent-appimage
+  remove:
+    - cachyos-zsh-config
+    - alacritty
+    - micro
+    - nano
+    - oh-my-zsh-git
+    - zsh
+    - zsh-autosuggestions
+    - zsh-completions
+    - zsh-history-substring-search
+    - zsh-syntax-highlighting
+    - zsh-theme-powerlevel10k
 
