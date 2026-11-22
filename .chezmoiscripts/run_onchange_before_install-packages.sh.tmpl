@@ -1,5 +1,14 @@
 #!/bin/sh
 set -eu
 
-sudo pacman -S --needed -- {{ .packages.pacman | shellQuoteList | join " " }}
-shelly install aur --needed {{ .packages.aur | shellQuoteList | join " " }}
+{{ range .packages.pacman }}
+if ! pacman -Qq {{ . | quote }} >/dev/null 2>&1; then
+    sudo pacman -S --needed {{ . | quote }}
+fi
+{{ end }}
+
+{{ range .packages.aur }}
+if ! pacman -Qq {{ . | quote }} >/dev/null 2>&1; then
+    shelly install aur {{ . | quote }}
+fi
+{{ end }}

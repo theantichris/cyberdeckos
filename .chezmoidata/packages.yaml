@@ -23,7 +23,9 @@ packages:
     - xdg-desktop-portal-gtk
     - xdg-desktop-portal-hyprland
   aur:
+    - curseforge
     - mitos-editor-bin
+    - slack-desktop
     - superseedr
     - uhk-agent-appimage
 
