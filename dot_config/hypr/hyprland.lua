@@ -1,11 +1,9 @@
+require("environment")
 require("input")
 require("keybindings")
 require("layers")
 require("monitors")
 require("windows")
-
-hl.env("XCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_SIZE", "24")
 
 -----------------------
 ---- LOOK AND FEEL ----
