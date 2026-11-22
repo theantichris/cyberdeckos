@@ -1,6 +1,6 @@
 # TODO
 
-- [ ] Mastodon client
+- [x] Mastodon client
 - [ ] Change hostname
 - [x] Uninstall script
 - [x] Hyprland keybinds

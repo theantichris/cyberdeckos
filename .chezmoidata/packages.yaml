@@ -23,6 +23,7 @@ packages:
     - openai-codex
     - rofi
     - superfile
+    - uv
     - wl-clipboard
     - xdg-desktop-portal-gtk
     - xdg-desktop-portal-hyprland
@@ -32,6 +33,8 @@ packages:
     - slack-desktop
     - superseedr
     - uhk-agent-appimage
+  uv:
+    - mastui
   remove:
     - cachyos-zsh-config
     - alacritty
