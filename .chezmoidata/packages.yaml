@@ -36,6 +36,7 @@ packages:
     - micro
     - nano
     - oh-my-zsh-git
+    - vim
     - zsh
     - zsh-autosuggestions
     - zsh-completions
