@@ -36,6 +36,7 @@ packages:
   uv:
     - mastui
   remove:
+    - cachyos-fish-config
     - cachyos-zsh-config
     - alacritty
     - micro

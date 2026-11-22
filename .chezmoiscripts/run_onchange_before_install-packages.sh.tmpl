@@ -13,12 +13,12 @@ if ! pacman -Qq {{ . | shellQuote }} >/dev/null 2>&1; then
 fi
 {{ end }}
 
+{{ range .packages.uv }}
+uv tool install {{ . | shellQuote }}
+{{ end }}
+
 {{ range .packages.remove }}
 if pacman -Qq -- {{ . | shellQuote }} >/dev/null 2>&1; then
     sudo pacman -Rns -- {{ . | shellQuote  }}
 fi
-{{ end }}
-
-{{ range .packages.uv }}
-uv tool install {{ . | shellQuote }}
 {{ end }}
