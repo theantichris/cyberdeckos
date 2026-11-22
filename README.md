@@ -1,6 +1,6 @@
 # CyberdeckOS
 
-My cyberdeck inspired dotfiles for all my devices.
+My cyberdeck inspired dotfiles for all my devices. Files are managed by [[chezmoi]](https://www.chezmoi.io/)
 
 ## Systems
 
