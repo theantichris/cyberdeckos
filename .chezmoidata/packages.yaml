@@ -1,5 +1,6 @@
 packages:
   pacman:
+    - bluetui
     - brave-origin-bin
     - chatgpt-desktop-bin
     - entr
