@@ -1,0 +1,13 @@
+packages:
+  pacman:
+    - brave-origin-bin
+    - chatgpt-desktop-bin
+    - github-cli
+    - hyprland
+    - hyprpolkitagent
+    - kitty
+    - openai-codex
+    - superfile
+    - wl-clipboard
+    - xdg-desktop-portal-gtk
+    - xdg-desktop-portal-hyprland
