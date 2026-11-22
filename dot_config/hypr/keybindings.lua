@@ -12,7 +12,6 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
-hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + D", hl.dsp.window.fullscreen({ mode = "maximized" }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 
@@ -51,3 +50,40 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
+-- Toggle workspace between floating and master
+local masterRules = {}
+
+hl.bind(mainMod .. " + V", function()
+    local workspace = hl.get_active_special_workspace()
+        or hl.get_active_workspace()
+
+    if not workspace then
+        return
+    end
+
+    local selector = workspace.addressable_name
+    if not workspace.id and not workspace.special then
+        selector = "name:" .. selector
+    end
+
+    local rule = masterRules[selector]
+    if not rule then
+        rule = hl.window_rule({
+            name = "workspace-master:" .. selector,
+            match = { workspace = selector },
+            tile = true,
+            enabled = false,
+        })
+        masterRules[selector] = rule
+    end
+
+    local master = not rule:is_enabled()
+    rule:set_enabled(master)
+
+    for _, window in ipairs(hl.get_workspace_windows(workspace)) do
+        hl.dispatch(hl.dsp.window.float({
+            window = window,
+            action = master and "disable" or "enable",
+        }))
+    end
+end)
