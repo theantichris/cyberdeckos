@@ -8,6 +8,8 @@ pager:
 aliases:
     cl: repo clone
     co: pr checkout
+    cr: pr create --web
+    rv: repo view --web
 http_unix_socket:
 browser:
 clipboard: enabled
