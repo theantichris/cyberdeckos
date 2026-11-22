@@ -7,6 +7,6 @@ hl.config({
 
 hl.config({
     general = {
-        layout = "master,"
+        layout = "master",
     },
 })

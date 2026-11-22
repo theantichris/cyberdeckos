@@ -15,8 +15,6 @@ hl.config({
 
         -- Please see https://wiki.hypr.land/configuring/extra/tearing/ before you turn this on
         allow_tearing = false,
-
-        layout = "dwindle",
     },
 
     decoration = {
