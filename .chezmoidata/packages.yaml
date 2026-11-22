@@ -5,6 +5,7 @@ packages:
     - entr
     - git-delta
     - github-cli
+    - go
     - gopls
     - hyprland
     - hyprpolkitagent
