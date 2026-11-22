@@ -1,6 +1,6 @@
 urls-source "newsblur"
-newsblur-login "`bw get username 'NewsBlur' --nointeraction`"
-newsblur-passwordeval "bw get password 'NewsBlur' --nointeraction"
+newsblur-login "theantichris"
+newsblur-passwordfile "~/.config/newsboat/newsblur-password.txt"
 cookie-cache "~/.config/newsboat/cookies.txt"
 
 refresh-on-startup yes
