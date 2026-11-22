@@ -18,3 +18,15 @@ fi
 if ! grep -Eq '^[[:space:]]*session[[:space:]]+optional[[:space:]]+pam_oo7[.]so[[:space:]]+auto_start[[:space:]]*$' "$pam_file"; then
     sudo sed -E -i "/$session_anchor/a session optional pam_oo7.so auto_start" "$pam_file"
 fi
+
+passwd_file=/etc/pam.d/passwd
+password_anchor='^[[:space:]]*password[[:space:]]+include[[:space:]]+system-auth[[:space:]]*$'
+
+if ! grep -Eq "$password_anchor" "$passwd_file"; then
+    printf 'Unexpected PAM password configuration: %s\n' "$passwd_file" >&2
+    exit 1
+fi
+
+if ! grep -Eq '^[[:space:]]*password[[:space:]]+optional[[:space:]]+pam_oo7[.]so[[:space:]]*$' "$passwd_file"; then
+    sudo sed -E -i "/$password_anchor/a password optional pam_oo7.so" "$passwd_file"
+fi
