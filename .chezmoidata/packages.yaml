@@ -14,6 +14,7 @@ packages:
     - hyprland
     - hyprpolkitagent
     - kitty
+    - newsboat
     - ollama
     - ollama-cuda
     - oo7
