@@ -1,0 +1,19 @@
+urls-source "newsblur"
+newsblur-login "`bw get username 'NewsBlur' --nointeraction`"
+newsblur-passwordeval "bw get password 'NewsBlur' --nointeraction"
+cookie-cache "~/.config/newsboat/cookies.txt"
+
+refresh-on-startup yes
+auto-reload yes
+reload-time 15
+
+browser "xdg-open %u </dev/null >/dev/null 2>&1 &"
+
+show-read-articles no
+show-read-feeds no
+
+unbind-key q
+bind-key h quit
+bind-key j down
+bind-key k up
+bind-key l open
