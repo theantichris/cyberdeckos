@@ -6,6 +6,7 @@ prefer_editor_prompt: disabled
 expiring_credentials: disabled
 pager:
 aliases:
+    cl: repo clone
     co: pr checkout
 http_unix_socket:
 browser:
