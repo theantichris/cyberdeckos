@@ -2,7 +2,10 @@ packages:
   pacman:
     - brave-origin-bin
     - chatgpt-desktop-bin
+    - entr
+    - git-delta
     - github-cli
+    - gopls
     - hyprland
     - hyprpolkitagent
     - kitty
@@ -13,3 +16,4 @@ packages:
     - wl-clipboard
     - xdg-desktop-portal-gtk
     - xdg-desktop-portal-hyprland
+
