@@ -1,15 +1,9 @@
 require("monitors")
 
-
----------------------
----- MY PROGRAMS ----
----------------------
-
--- Set programs that you use
+local browser     = "brave-origin"
 local fileManager = "spf"
 local launcher    = "rofi -show drun"
 local terminal    = "kitty"
-
 
 -------------------
 ---- AUTOSTART ----
@@ -26,16 +20,12 @@ local terminal    = "kitty"
 --   hl.exec_cmd("waybar & hyprpaper & firefox")
 -- end)
 
-
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
 -------------------------------
 
--- See https://wiki.hypr.land/configuring/core/environment-variables/
-
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
-
 
 -----------------------
 ----- PERMISSIONS -----
@@ -244,6 +234,8 @@ local mainMod = "SUPER"
 
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(launcher))
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
