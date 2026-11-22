@@ -1,3 +1,4 @@
+require("input")
 require("monitors")
 
 local browser     = "brave-origin"
@@ -5,46 +6,8 @@ local fileManager = "spf"
 local launcher    = "rofi -show drun"
 local terminal    = "kitty"
 
--------------------
----- AUTOSTART ----
--------------------
-
--- See https://wiki.hypr.land/configuring/core/autostart/
-
--- Autostart necessary processes (like notifications daemons, status bars, etc.)
--- Or execute your favorite apps at launch like this:
---
--- hl.on("hyprland.start", function () 
---   hl.exec_cmd(terminal)
---   hl.exec_cmd("nm-applet")
---   hl.exec_cmd("waybar & hyprpaper & firefox")
--- end)
-
--------------------------------
----- ENVIRONMENT VARIABLES ----
--------------------------------
-
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
-
------------------------
------ PERMISSIONS -----
------------------------
-
--- See https://wiki.hypr.land/configuring/core/advanced-configuration/permissions/
--- Please note permission changes here require a Hyprland restart and are not applied on-the-fly
--- for security reasons
-
--- hl.config({
---   ecosystem = {
---     enforce_permissions = true,
---   },
--- })
-
--- hl.permission("/usr/(bin|local/bin)/grim", "screencopy", "allow")
--- hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencopy", "allow")
--- hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "allow")
-
 
 -----------------------
 ---- LOOK AND FEEL ----
@@ -188,43 +151,6 @@ hl.config({
         allow_new_top_layers_over_existing_fullscreen = true, -- Set to false to make newly mapped top layers render below existing covering fullscreen window
     },
 })
-
-
----------------
----- INPUT ----
----------------
-
-hl.config({
-    input = {
-        kb_layout  = "us",
-        kb_variant = "",
-        kb_model   = "",
-        kb_options = "caps:super",
-        kb_rules   = "",
-
-        follow_mouse = 1,
-
-        sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
-
-        touchpad = {
-            natural_scroll = false,
-        },
-    },
-})
-
-hl.gesture({
-    fingers = 3,
-    direction = "horizontal",
-    action = "workspace"
-})
-
--- Example per-device config
--- See https://wiki.hypr.land/configuring/core/devices/ for more
-hl.device({
-    name        = "epic-mouse-v1",
-    sensitivity = -0.5,
-})
-
 
 ---------------------
 ---- KEYBINDINGS ----
