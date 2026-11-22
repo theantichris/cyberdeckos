@@ -81,3 +81,23 @@ hl.window_rule({
     content          = "game",
     sync_fullscreen  = true,
 })
+
+local modalMatches = {
+    { modal         = true },
+    { title         = "^(Open|Authentication Required|Add Folder to Workspace|Choose Files|Save As|Confirm to replace files|File Operation Progress)$" },
+    { initial_title = "^(Open File)$" },
+    { class         = "^([Xx]dg-desktop-portal-gtk)$" },
+    { title         = "^(File Upload|Choose wallpaper|Library)(.*)$" },
+    { class         = "^(.*dialog.*)$" },
+    { title         = "^(.*dialog.*)$" },
+    { class         = "^(hyprland-share-picker)$" },
+}
+
+for _, match in ipairs(modalMatches) do
+    hl.window_rule({
+        match           = match,
+        float           = true,
+        size            = "",
+        persistent_size = false,
+    })
+end
