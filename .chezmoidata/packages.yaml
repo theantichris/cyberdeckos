@@ -22,4 +22,5 @@ packages:
   aur:
     - mitos-editor-bin
     - superseedr
+    - uhk-agent-appimage
 
