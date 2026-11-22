@@ -6,6 +6,8 @@ packages:
     - hyprland
     - hyprpolkitagent
     - kitty
+    - ollama
+    - ollama-cuda
     - openai-codex
     - superfile
     - wl-clipboard
