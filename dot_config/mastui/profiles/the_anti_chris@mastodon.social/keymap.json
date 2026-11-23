@@ -13,14 +13,14 @@
     "search": "/",
     "switch_profile": "u",
     "toggle_dms": "m",
-    "like_post": "l",
+    "like_post": "f",
     "boost_post": "b",
     "copy_link": "y",
     "go_to_top": "g",
     "scroll_up": "k",
     "scroll_down": "j",
-    "focus_previous_column": "shift+tab",
-    "focus_next_column": "tab",
+    "focus_previous_column": "h",
+    "focus_next_column": "l",
     "show_help": "?",
     "view_log": "f12"
 }
