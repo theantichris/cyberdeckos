@@ -15,6 +15,7 @@ packages:
     - glow
     - go
     - gopls
+    - hugo
     - hyprland
     - hyprpolkitagent
     - kitty
