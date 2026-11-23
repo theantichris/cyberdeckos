@@ -8,10 +8,15 @@ hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + D", hl.dsp.window.fullscreen({ mode = "maximized" }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 
-hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
+local function focusAndRaise(direction)
+    hl.dispatch(hl.dsp.focus({direction = direction}))
+    hl.dispatch(hl.dsp.window.alter_zorder({ mode = "top" }))
+end
+
+hl.bind(mainMod .. " + H", function() focusAndRaise("left") end)
+hl.bind(mainMod .. " + J", function() focusAndRaise("down") end)
+hl.bind(mainMod .. " + K", function() focusAndRaise("up") end)
+hl.bind(mainMod .. " + L", function() focusAndRaise("right") end)
 
 local function moveWindow(direction, x, y)
     local window = hl.get_active_window()
