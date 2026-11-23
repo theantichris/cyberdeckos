@@ -30,6 +30,7 @@ packages:
   aur:
     - curseforge
     - mitos-editor-bin
+    - linecast
     - slack-desktop
     - superseedr
     - uhk-agent-appimage
