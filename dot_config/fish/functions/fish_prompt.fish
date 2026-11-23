@@ -70,7 +70,7 @@ function fish_prompt
         set left_part (printf '%s%s' "$left_part" "$git_part")
     end
 
-    set -l right_part " \uf017  "(date '+%H:%M:%S')
+    set -l right_part "   "(date '+%H:%M:%S')
     set -l left_len (string length -- "$left_part")
     set -l right_len (string length -- "$right_part")
     set -l fill_width (math "$COLUMNS - $left_len - $right_len - 2")
