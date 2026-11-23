@@ -51,9 +51,11 @@ packages:
   uv:
     - mastui
   remove:
-    - cachyos-fish-config
-    - cachyos-zsh-config
     - alacritty
+    - cachyos-fish-config
+    - cachyos-hello
+    - cachyos-wallpapers
+    - cachyos-zsh-config
     - micro
     - nano
     - oh-my-zsh-git
