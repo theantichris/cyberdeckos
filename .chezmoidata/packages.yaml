@@ -21,6 +21,7 @@ packages:
     - ollama-cuda
     - oo7
     - openai-codex
+    - otf-monaspace
     - rofi
     - superfile
     - uv
