@@ -1,5 +1,6 @@
 packages:
   pacman:
+    - bash-language-server
     - bitwarden
     - bitwarden-cli
     - bluetui
@@ -7,6 +8,7 @@ packages:
     - cachyos-gaming-applications
     - cachyos-gaming-meta
     - chatgpt-desktop-bin
+    - delve
     - entr
     - git-delta
     - github-cli
@@ -16,20 +18,29 @@ packages:
     - hyprland
     - hyprpolkitagent
     - kitty
+    - lua-language-server
+    - markdown-oxide
     - newsboat
     - ollama
     - ollama-cuda
     - oo7
     - openai-codex
     - otf-monaspace
+    - pyright
     - rofi
+    - ruff
     - superfile
+    - tombi
     - uv
+    - vscode-json-languageserver
     - wl-clipboard
     - xdg-desktop-portal-gtk
     - xdg-desktop-portal-hyprland
+    - yamlfmt
+    - yaml-language-server
   aur:
     - curseforge
+    - fish-lsp
     - mitos-editor-bin
     - linecast
     - linux-legion
@@ -52,4 +63,3 @@ packages:
     - zsh-history-substring-search
     - zsh-syntax-highlighting
     - zsh-theme-powerlevel10k
-

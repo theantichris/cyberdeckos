@@ -1,0 +1,7 @@
+[".config/mitos/runtime/dictionaries/gd_GB/gd_GB.aff"]
+type = "file"
+url = "https://raw.githubusercontent.com/LibreOffice/dictionaries/c0865a85eb67dc377f2cf8e8fe2c4fa9e53f0dcb/gd_GB/gd_GB.aff"
+
+[".config/mitos/runtime/dictionaries/gd_GB/gd_GB.dic"]
+type = "file"
+url = "https://raw.githubusercontent.com/LibreOffice/dictionaries/c0865a85eb67dc377f2cf8e8fe2c4fa9e53f0dcb/gd_GB/gd_GB.dic"

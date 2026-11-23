@@ -1,2 +1,23 @@
+[editor]
+line-number = "relative"
+shell = ["fish", "-c"]
+
+[editor.bufferline]
+show = "multiple"
+
+[editor.completion]
+replace = true
+
+[editor.cursor]
+highlight-line = true
+
+[editor.cursor.shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
 [editor.file-picker]
 hidden = false
+
+[editor.indent-guides]
+render = true

@@ -1,0 +1,9 @@
+[[language]]
+name = "markdown"
+soft-wrap = { enable = true }
+spelling.languages = ["en_US"]
+
+[[language]]
+name = "python"
+auto-format = true
+code-actions-on-save = ["source.organizeImports"]
