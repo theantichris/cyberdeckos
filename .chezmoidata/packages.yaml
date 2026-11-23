@@ -31,6 +31,7 @@ packages:
     - curseforge
     - mitos-editor-bin
     - linecast
+    - linux-legion
     - slack-desktop
     - superseedr
     - uhk-agent-appimage
