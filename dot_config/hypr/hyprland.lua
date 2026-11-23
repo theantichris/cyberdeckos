@@ -1,4 +1,5 @@
 require("variables")
+require("autostart")
 require("appearance")
 require("config")
 require("environment")
