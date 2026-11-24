@@ -8,6 +8,8 @@ text/plain=Mitos.desktop
 x-scheme-handler/codex=chatgpt.desktop
 x-scheme-handler/curseforge=curseforge.desktop
 x-scheme-handler/cfauth=curseforge.desktop
+x-scheme-handler/slack=slack.desktop
 
 [Added Associations]
 x-scheme-handler/cfauth=curseforge.desktop;
+x-scheme-handler/slack=slack.desktop;
