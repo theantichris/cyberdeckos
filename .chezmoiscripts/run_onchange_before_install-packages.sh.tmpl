@@ -13,6 +13,10 @@ if ! pacman -Qq {{ . | shellQuote }} >/dev/null 2>&1; then
 fi
 {{ end }}
 
+sudo pacman -D --asexplicit -- \
+    {{ .packages.pacman | shellQuoteList | join " " }} \
+    {{ .packages.aur | shellQuoteList | join " " }}
+
 {{ range .packages.uv }}
 uv tool install {{ . | shellQuote }}
 {{ end }}
