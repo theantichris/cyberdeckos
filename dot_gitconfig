@@ -1,8 +1,28 @@
+[commit]
+	gpgsign = true
+[core]
+	autocrlf = input
+	editor = ms
+	eol = lf
+	pager = delta
+[delta]
+	navigate = true
+	dark = true
+	line-numbers = true
+	hyperlinks = true
+[gpg]
+	format = ssh
+[init]
+	defaultBranch = main
+[interactive]
+	diffFilter = delta --color-only
+[merge]
+	conflictstyle = zdiff3
+[pull]
+	rebase = true
+[push]
+	default = simple
 [user]
 	name = Christopher Lamm
 	email = christopherlamm81@gmail.com
 	signingkey = /home/christopher/.ssh/id_ed25519
-[gpg]
-	format = ssh
-[commit]
-	gpgsign = true
