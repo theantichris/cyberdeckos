@@ -54,12 +54,17 @@ packages:
     - alacritty
     - cachyos-fish-config
     - cachyos-hello
+    - cachyos-packageinstaller
     - cachyos-wallpapers
     - cachyos-zsh-config
+    - fisher
+    - fish-pure-prompt
+    - glances
     - micro
     - nano
     - oh-my-zsh-git
     - vim
+    - vlc-plugins-all
     - zsh
     - zsh-autosuggestions
     - zsh-completions
