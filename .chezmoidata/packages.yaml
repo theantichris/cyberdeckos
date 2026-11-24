@@ -48,6 +48,7 @@ packages:
   aur:
     - curseforge
     - fish-lsp
+    - golazo
     - mitos-editor-bin
     - linecast
     - linux-legion
