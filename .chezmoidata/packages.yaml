@@ -1,6 +1,7 @@
 packages:
   pacman:
     - bash-language-server
+    - bat
     - bitwarden
     - bitwarden-cli
     - bluetui
@@ -10,6 +11,10 @@ packages:
     - chatgpt-desktop-bin
     - delve
     - entr
+    - eza
+    - fish
+    - fish-autopair
+    - fzf
     - git-delta
     - github-cli
     - glow
@@ -31,6 +36,7 @@ packages:
     - rofi
     - ruff
     - superfile
+    - tealdeer
     - tombi
     - uv
     - vscode-json-languageserver
