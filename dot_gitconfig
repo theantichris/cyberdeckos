@@ -1,0 +1,8 @@
+[user]
+	name = Christopher Lamm
+	email = christopherlamm81@gmail.com
+	signingkey = /home/christopher/.ssh/id_ed25519
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
